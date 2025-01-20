@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escape Room Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('your-sky-image-url.jpg') no-repeat center center fixed;
+      background-size: cover;
+      padding: 20px;
+      text-align: center;
+    }
+    #questionContainer {
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      padding: 8px;
+      font-size: 14px;
+      width: 200px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 2px solid #ff8cbb;
+      outline: none;
+    }
+    input[type="text"]:focus {
+      border-color: #ff64b0;
+    }
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+      margin-top: 10px;
+      cursor: pointer;
+      background-color: #ff8cbb;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ff64b0;
+    }
+    #response {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #ff64b0;
+      background-color: #ffeff8;
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      border: 2px solid #ff8cbb;
+      font-size: 16px;
+    }
+    h1 {
+      color: #ff64b0;
+    }
+    #character {
+      font-size: 50px; /* Adjust the size of the emoji */
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Escape Room made by <i>MissRupa</i></h1>
+
+  <!-- Character Emoji -->
+  <div id="character">😜</div> <!-- You can use any emoji here -->
+
+  <div id="questionContainer">
+    <p id="questionText"></p>
+    <input type="text" id="answerInput" placeholder="Type your answer...">
+    <button onclick="checkAnswer()">Submit Answer</button>
+  </div>
+  <p id="response"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
